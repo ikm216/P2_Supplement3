@@ -13,8 +13,9 @@ public class test_java {
 
     @Test
     public void test_should_negative_21_for_determinant(){
-        int[][] matrix = {{3, 2, 3}, {4, 5, 4}, {9, 7, 5}}; 
-        int answer = search.findDeterminate(matrix);
-        Assert.assertEquals(-21, answer);
+        int[][] matrix = {{3, 2, 3}, {4, 5, 4}, {9, 7, 5}};
+        int N = matrix.length; 
+        int answer = search.findDeterminate(matrix, N);
+        Assert.assertEquals(-28, answer);
     }
 }
