@@ -10,4 +10,11 @@ public class test_java {
     int test = search.binarySearch(arr, low, high, searchValue);
     Assert.assertEquals(3, test);
     }
+
+    @Test
+    public void test_should_negative_21_for_determinant(){
+        int[][] matrix = {{3, 2, 3}, {4, 5, 4}, {9, 7, 5}}; 
+        int answer = search.findDeterminate(matrix);
+        Assert.assertEquals(-21, answer);
+    }
 }
