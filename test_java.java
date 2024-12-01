@@ -23,7 +23,7 @@ public class test_java {
     public void test_should_answer_for_matrix(){
         int[][] matrix1 = {{1,2}, {2,1}};
         int[][] matrix2 = {{4,5}, {6,5}};
-        int[][] test = {{16,15}, {24,25}};
+        int[][] test = {{16,15}, {14,15}};
 
         int[][] answer = search.multiplyMatrix(matrix1, matrix2);
         Assert.assertArrayEquals(test, answer);
