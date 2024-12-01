@@ -2,10 +2,12 @@ import org.junit.*;
 
 public class test_java {
     @Test
-    public void testBinarySearchFound(){
-        int [] arr = {2, 4, 6, 8, 10};
-    int search = 8;
-    int test = search.binarySearch(arr, search);
-    Assert.assertEquals(8, test);
+    public void testBinarySearch(){
+    int [] arr = {2, 4, 6, 8, 10};
+    int low = 0;
+    int high = arr.length - 1;
+    int searchValue = 8;
+    int test = search.binarySearch(arr, low, high, searchValue);
+    Assert.assertEquals(3, test);
     }
 }
