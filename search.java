@@ -32,6 +32,18 @@ public class search{
             return -1;
         }
     }
+    /**
+ * Calculates the determinant of a square matrix using recursion.
+ * 
+ * This method supports matrices of arbitrary size (1x1, 2x2, or larger). For matrices larger
+ * than 2x2, it uses recursive expansion by minors and cofactors to compute the determinant.
+ * 
+ * @param matrix The square matrix represented as a 2D integer array.
+ * @param N      The size of the matrix (number of rows or columns).
+ * @return       The determinant of the matrix as an integer.
+ * 
+ * @throws IllegalArgumentException If the matrix is null or not square.
+ */
     public static int findDeterminate(int[][] matrix, int N){
         int d = 0;
         if(N == 1){
