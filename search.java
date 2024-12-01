@@ -1,4 +1,18 @@
 public class search{
+    /**
+ * Performs a binary search on a sorted array to find the index of a given element.
+ * 
+ * The method uses recursion to divide the search space in half with each call,
+ * making it efficient for large sorted datasets. If the element is found, 
+ * its index is returned; otherwise, -1 is returned.
+ * 
+ * @param arr   The sorted array of integers to search.
+ * @param low   The starting index of the current search range.
+ * @param high  The ending index of the current search range.
+ * @param search The integer value to search for in the array.
+ * @return      The index of the element in the array if found, otherwise -1.
+ * @throws StackOverflowError If the array is unsorted or if there is an infinite recursion due to incorrect bounds.
+ */
     public static int binarySearch(int[] arr, int low, int high, int search){
         
         if(arr[low] <= arr[high]){
