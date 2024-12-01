@@ -84,6 +84,21 @@ public class search{
         return d;
     }
 
+    /**
+ * Multiplies two matrices and returns the resulting matrix.
+ *
+ * This method performs standard matrix multiplication. It takes two matrices as input and
+ * calculates the product of the two. The number of columns in the first matrix must equal
+ * the number of rows in the second matrix; otherwise, an exception is thrown.
+ *
+ * @param matrix1 The first matrix (2D array) to multiply.
+ * @param matrix2 The second matrix (2D array) to multiply.
+ * @return        A 2D array representing the resulting matrix after multiplication.
+ *
+ * @throws IllegalArgumentException If the number of columns in the first matrix does not match
+ *                                  the number of rows in the second matrix.
+ *
+ */
     public static int[][] multiplyMatrix(int[][] matrix1, int[][] matrix2){
         int row1 = matrix1.length;
         int col1 = matrix1[0].length;
